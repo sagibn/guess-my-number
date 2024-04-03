@@ -1,0 +1,26 @@
+.btn-again {
+  top: 0;
+  left: 0;
+}
+
+.btn-again:hover {
+  cursor: pointer;
+  background-color: rgb(207, 206, 206);
+}
+
+.rule {
+  margin: 15px;
+  right: 0%;
+  position: absolute;
+}
+
+.hidden-number {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: black;
+  background-color: white;
+  padding: 2rem 2rem;
+}
