@@ -59,5 +59,5 @@ document.querySelector('.btn-again').addEventListener('click', function () {
   document.getElementById('check').disabled = false;
   document.querySelector('.hidden-number').textContent = '?';
   document.querySelector('.score').textContent = score;
-  document.querySelector('.guess').textContent = '';
+  document.querySelector('.guess').value = '';
 });
