@@ -1,10 +1,10 @@
 'use strict';
 
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
-let highScore = 0;
 const MAX_NUM = 20;
 const MIN_NUM = 1;
+let secretNumber = Math.trunc(Math.random() * MAX_NUM) + 1;
+let score = MAX_NUM;
+let highScore = 0;
 
 const displayMessage = function (i_message) {
   document.querySelector('.message').textContent = i_message;
@@ -52,8 +52,8 @@ document.querySelector('.btn-check').addEventListener('click', function () {
 });
 
 document.querySelector('.btn-again').addEventListener('click', function () {
-  score = 20;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  score = MAX_NUM;
+  secretNumber = Math.trunc(Math.random() * MAX_NUM) + 1;
   displayMessage('Start guessing...');
   document.querySelector('body').style.backgroundColor = 'black';
   document.getElementById('check').disabled = false;
